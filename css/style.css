@@ -1,0 +1,168 @@
+.myCard:hover{
+    transform: scale(1.002);
+    box-shadow: 0px 0px 3px rgba(187, 39, 255, 0.945);
+}
+
+.mynavBar{
+    width: 100%;
+    height: 12vh;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 3vh;
+
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(153,51,204, 0.3); 
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(153,51,204, 0.6);
+}
+
+hr {
+  color: rgba(153,51,204, 1);
+  border: solid 1px;
+}
+
+.appSection{
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+    display: flex;
+    flex-direction: row;
+
+}
+.appSection .carousel{
+    margin-right: 2vh;
+}
+
+.navbar-toggler{
+    order: -1;
+    margin-left: 15px;
+}
+
+iframe[src*="docs.google.com"] {
+    height: 600px;
+}
+
+iframe[src*="docs.google.com"]::-webkit-scrollbar {
+  display: none;
+}
+
+.profile{
+  display: flex;
+  flex-direction: row;
+}
+
+.des-profile{
+  margin-left: 2vw;
+}
+
+.skill{
+  margin:0;
+}
+
+.skill-image{
+  margin-top: 5vh;
+}
+
+.skill-title{
+  margin-left: 2vw;
+  align-items: right;
+}
+
+@media screen and (max-width:992px){
+    
+    .profile{
+        flex-direction: column !important;
+        align-items: center;
+        margin-left: auto;
+        margin-top: 1vh; margin-bottom: 1vh;
+    }
+
+    .profile .des-profile {
+        order: -1;
+        padding: 0;
+        margin-left: 0;
+        margin-top: 3vh;
+        margin-bottom: 1vh;
+        width: 70vw;
+        align-items: center;
+
+    text-align: center;
+      }
+    
+    .profile .skill {
+        order: 1;
+
+      }
+
+    .skill{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .skill-title{
+        margin-left: auto;
+        align-items: center;
+        width: 90%;
+        height: 90%;
+    }
+    
+    .skill-image {
+        margin: auto;
+        margin-left: auto;
+        margin-top: 1vh;
+        content: url('https://skillicons.dev/icons?i=cs,java,py,dotnet,spring,flask,html,css,js,bootstrap,react,mysql&perline=4');
+    }
+    .appSection {
+        flex-direction: column !important;
+        margin-left: 15vw;
+        width: 100%;
+        margin-top: 1vh; margin-bottom: 1vh;
+      }
+    
+    .appSection .carousel {
+        order: 1;
+        margin-top: 3vh;
+        margin-bottom: 1vh;
+        width: 70vw;
+      }
+    
+    .appSection .description {
+        order: -1;
+        margin-left: 0;
+        width: 70vw;
+      }
+
+      .des-profile{
+        font-size: small;
+        margin-left: 0;
+
+      }
+      .contact{
+        width: 100%;
+      }
+
+}
+
+@media screen and (max-width:576px){
+
+    .skill-image {
+      margin: auto;
+      margin-left: auto;
+      margin-top: 1vh;
+      width: 90%;
+      content: url('https://skillicons.dev/icons?i=cs,java,py,dotnet,spring,flask,html,css,js,bootstrap,react,mysql&perline=4');
+  }
+
+  .skill-title{
+    width: 80%;
+  }
+
+}
