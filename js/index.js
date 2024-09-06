@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
       '#carouselWeb': {
         texts: [
           'Flask Blog: <br>Un pequeño blog desarrollado con Python utilizando el micro framework Flask.<br><br>Clickea en la imagen para ver su código.',
-          'React Movies: <br>Pequeña web de películas utilizando React y la API de themoviedb.org.<br><br>Clickea en la imagen para ver su código.<br>              <a href="https://micaelaedith.github.io/react-movies/" target="_blank">Link a la página.</a>'
+          'React Movies: <br>Pequeña web de películas utilizando React y la API de themoviedb.org.<br><br>Clickea en la imagen para ver su código.<br>              <a href="https://micaelaedith.github.io/react-movies/" target="_blank">Link a la página.</a>',
+          'Proyecto CG: <br>Página web básica con HTML, CSS y JS.<br><br>Clickea en la imagen para ver su código.<br>              <a href="https://micaelaedith.github.io/proyecto-gc/" target="_blank">Link a la página.</a>'
         ],
         textId: 'webText'
       },
