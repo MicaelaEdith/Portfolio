@@ -1,3 +1,7 @@
+.imgGit:hover{
+  transform: scale(1.02);
+}
+
 .myCard:hover{
     transform: scale(1.002);
     box-shadow: 0px 0px 3px rgba(187, 39, 255, 0.945);
@@ -34,12 +38,35 @@ hr {
     margin-bottom: 3vh;
     display: flex;
     flex-direction: row;
-
-}
-.appSection .carousel{
-    margin-right: 2vh;
 }
 
+.appSection .carousel {
+  border-radius: 10px;
+  margin-right: 2vh;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.appSection .carousel:hover {
+  transform: scale(1.01);
+}
+
+.appSection .carousel::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.appSection .carousel:hover::after {
+  opacity: 1;
+}
 .navbar-toggler{
     order: -1;
     margin-left: 15px;
@@ -126,7 +153,7 @@ iframe[src*="docs.google.com"]::-webkit-scrollbar {
         width: 100%;
         margin-top: 1vh; margin-bottom: 1vh;
       }
-    
+
     .appSection .carousel {
         order: 1;
         margin-top: 3vh;
@@ -134,6 +161,10 @@ iframe[src*="docs.google.com"]::-webkit-scrollbar {
         width: 70vw;
       }
     
+    .appSection .carousel:hover {
+      transform: scale(1.02);
+    }
+
     .appSection .description {
         order: -1;
         margin-left: 0;
