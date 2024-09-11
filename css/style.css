@@ -32,6 +32,23 @@ hr {
   color: rgba(153,51,204, 1);
   border: solid 1px;
 }
+.boxApp{
+  width: 80%;
+  border: solid, 1px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 5vh;
+  padding-bottom: 8vh;
+  box-shadow: 5px 6px 4px #181524;
+}
+
+.boxApp:hover {
+  transform: scale(1.001);
+}
 
 .appSection{
     margin-top: 10vh;
@@ -49,7 +66,7 @@ hr {
 }
 
 .appSection .carousel:hover {
-  transform: scale(1.01);
+  transform: scale(1.0005);
 }
 
 .appSection .carousel::after {
@@ -149,7 +166,7 @@ iframe[src*="docs.google.com"]::-webkit-scrollbar {
     }
     .appSection {
         flex-direction: column !important;
-        margin-left: 15vw;
+        margin-left: 4vw;
         width: 100%;
         margin-top: 1vh; margin-bottom: 1vh;
       }
@@ -169,6 +186,8 @@ iframe[src*="docs.google.com"]::-webkit-scrollbar {
         order: -1;
         margin-left: 0;
         width: 70vw;
+        align-items: center;
+        text-align: center;
       }
 
       .des-profile{
